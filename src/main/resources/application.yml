@@ -1,0 +1,23 @@
+server:
+  port: 8082
+
+debug: true
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/users
+    username: ragallardom
+    password: modonor
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+jwt:
+  secret: UnaClaveMuyLargaDeAlMenos32Caracteres123456
+  expiration: 3600000
+
+
+logging:
+  level:
+    org.hibernate.SQL: DEBUG
